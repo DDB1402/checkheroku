@@ -54,7 +54,7 @@ function MainWindow({ startCall }) {
           type="text"
           className="txt-clientId"
           placeholder="Your friend ID"
-          defaultValue="HAHA"
+          defaultValue="id2"
           onChange={(event) => setFriendID(event.target.value)}
         />
         <div>
