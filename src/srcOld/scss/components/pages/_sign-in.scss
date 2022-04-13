@@ -1,0 +1,58 @@
+.sign-in {
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+    border-radius: 5px;
+    max-height: 80rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color-blue-light;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color-primary-light;
+    }
+
+    &__top {
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        small {
+            color: #777;
+
+            a {
+                margin-left: 5px;
+                color: $color-primary-dark;
+            }
+        }
+    }
+
+    .sign-in__form {
+        width: 42rem;
+        margin-bottom: 2rem;
+        &__content {
+            margin: 2rem 0;
+
+            & > * ~ * {
+                margin-top: 2rem;
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.input-field {
+    &__error {
+        color: red;
+        font-size: 12px;
+    }
+}

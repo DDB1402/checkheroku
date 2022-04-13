@@ -1,0 +1,46 @@
+//base
+@import "./reset";
+@import "./variable";
+@import "./mixin";
+@import "./base";
+
+//top level components
+@import "./components/layout";
+@import "./components/message-item";
+@import "./components/card-message";
+@import "./components/update-profile";
+@import "./components/chat-list";
+@import "./components/upload-images";
+@import "./components/iconList";
+@import "./components/search_friend";
+@import "./components/notification-item";
+@import "./components/card_chat_confirm";
+@import "./components/message-notification";
+
+//pages
+@import "./components/pages/sign-in";
+@import "./components/pages/home/home";
+@import "./components/pages/home/sidebar-nav";
+@import "./components/pages/chatVideo/video";
+
+//shared
+@import "./components/shared/textfield";
+@import "./components/shared/upload";
+@import "./components/shared/checkbox";
+@import "./components/shared/avatar";
+@import "./components/shared/modal";
+@import "./components/shared/popover";
+@import "./components/shared/select";
+@import "./components/shared/loading-full-screen";
+@import "./components/shared/snackbar";
+@import "./components/shared/spin-loading";
+@import "./components/shared/chip";
+
+//pages
+@import "./components/pages/sign-in";
+@import "./components/pages/home/home";
+@import "./components/pages/home/sidebar-nav";
+@import "./components/pages/home/tabs-route";
+@import "./components/pages/home/tab-message";
+@import "./components/pages/home/main";
+@import "./components/pages/home/search";

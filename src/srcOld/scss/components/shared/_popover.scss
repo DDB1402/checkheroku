@@ -1,0 +1,51 @@
+.popover-root {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.popover {
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    top: calc(100%);
+    left: 0;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    min-width: 100%;
+    margin-top: 5px;
+
+    &.v1 {
+        left: 1rem;
+        ul {
+            width: 150px;
+            li {
+                cursor: pointer;
+                padding: 1rem;
+                @include flex(center);
+                transition: 0.3s ease;
+                span {
+                    display: block;
+                    margin-left: 1rem;
+                }
+
+                &:hover {
+                    background-color: rgba(119, 119, 119, 0.2);
+                }
+
+                &.hight-light {
+                    color: red;
+                    svg {
+                        fill: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popover_icon {
+    top: -850%;
+    left: 100%;
+    padding: 10px;
+}
