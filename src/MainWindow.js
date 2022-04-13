@@ -35,16 +35,17 @@ function MainWindow({ startCall }) {
   };
 
   return (
-    <div className="container main-window">
+    <div
+      className="container main-window"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <div>
         <h3>
           Hi, your ID is
-          <input
-            type="text"
-            className="txt-clientId"
-            defaultValue={clientID}
-            readOnly
-          />
+          <input type="text" className="txt-clientId" defaultValue={clientID} />
         </h3>
         <h4>Get started by calling a friend below</h4>
       </div>
@@ -52,8 +53,8 @@ function MainWindow({ startCall }) {
         <input
           type="text"
           className="txt-clientId"
-          spellCheck={false}
           placeholder="Your friend ID"
+          defaultValue="HAHA"
           onChange={(event) => setFriendID(event.target.value)}
         />
         <div>
